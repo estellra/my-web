@@ -1,0 +1,163 @@
+@font-face {
+    font-family: gothic ui;
+    src: url(PixelMplus-20130602/PixelMplus12-Regular.ttf);
+}
+body
+    {
+        cursor: url(sprite/cursor.png), auto;
+        background-image: url('bluepastabg.webp');
+        overflow-y: scroll;
+    }
+.window
+    {
+        background-color:rgb(217, 230, 246);
+        border: 2px solid rgb(60, 152, 160);
+        box-shadow: 3px 3px rgb(127, 152, 226);
+        padding: 4px;
+
+    
+    }
+.window::after
+    {
+        display: block;
+        content: url(sprite/windowbottom.png);
+    }
+.title
+    {
+        font-weight: bold;
+        position: relative;
+        border: 2px solid rgb(60, 152, 160);
+        color: rgb(60, 152, 160);
+        padding: 1px;
+        padding-bottom: 4px;
+        font-size: 18;
+        font-family: gothic ui;
+    }
+.title::after
+    {
+        float: right;
+        content: url(sprite/windowbutton.png);
+    }
+.content
+    {
+        background-color:rgb(182, 211, 245);
+        border: 2px solid rgb(60, 152, 160);
+        padding: 4px;
+        margin-top: 4px;
+        color: rgb(90, 141, 146);
+        image-rendering: pixelated;
+        font-size: 18;
+        margin-bottom: 4px;
+        font-family: gothic ui;
+    
+
+    }
+.link
+    {
+        background-color:rgb(182, 211, 245);
+        border: 2px transparent;
+        padding: 4px;
+        margin-top: 4px;
+        color: rgb(90, 141, 146);
+        image-rendering: pixelated;
+        font-size: 18;
+        margin-bottom: 4px;
+        font-family: gothic ui;
+        text-decoration: none;
+        
+    }
+.navigatelink
+    {
+        color: rgb(90, 141, 146);
+        image-rendering: pixelated;
+        font-size: 24;
+        font-family: gothic ui;
+        font-weight: bolder;
+        text-decoration: none;
+    }
+.headerbox
+    {
+        display: flex;
+        height: max-content;
+        justify-content: center;
+        align-items: center;
+    }
+.leftbox
+    {
+        display: block;
+        height: max-content;
+        width: 25%;
+        padding: 20px;
+        margin: 0px;
+    }
+.middlebox
+    {
+        display: block;
+        height: max-content;
+        width: 50%;
+        padding-bottom: 20px;
+        padding-top: 20px;
+        margin: 0px;
+    }
+.rightbox
+    {
+        display: block;
+        height: max-content;
+        width: 25%;
+        padding: 20px;
+        margin: 0px;
+    }
+.bold
+    {
+        font-weight: bold;
+        image-rendering: pixelated;
+        color: rgb(60, 152, 160);
+        font-size: 18;
+        font-family: gothic ui;
+
+    }
+.button
+    {
+        color: rgb(60, 152, 160);
+        background-color:aliceblue ;
+        border: 4px solid transparent;
+        box-shadow: 2px 2px rgb(127, 152, 226);
+        font-size: 18;
+        font-family: gothic ui;
+        vertical-align: auto;
+        text-align: center;
+        image-rendering: pixelated;
+        margin-top: 2px;
+
+    }
+.navigatebutton
+    {
+        color: rgb(60, 152, 160);
+        background-color:aliceblue ;
+        border: 2px solid rgb(60, 152, 160);
+        margin:2px;
+        box-shadow: 2px 2px rgb(127, 152, 226);
+        font-size: 18;
+        font-family: gothic ui;
+        vertical-align: auto;
+        text-align: center;
+        image-rendering: pixelated;
+    }
+.taskbar
+    {
+        display: flex;
+        width: 100%;
+        gap: 4px;
+        align-items: center;
+        position: fixed;
+    }
+footer
+{
+    background-color:aliceblue ;
+    position: fixed;
+    height: 42px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    
+}
