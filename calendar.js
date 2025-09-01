@@ -23,8 +23,11 @@ else if(gio<18&&gio>5)
 {
   text="good afternoon stranger";
     image="sprite/desktop/icon_desktop_neru_evening.png";
-    suffix="pm";
+ if(gio>11)
+ {
+   suffix="pm";
     gio-=12;
+ }   
 }
 else if(gio<23&&gio>18)
 {
